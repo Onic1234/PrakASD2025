@@ -31,6 +31,6 @@ def cariKota(kota, data):
     return cariSemuaIndex(kota, [mhs[1] for mhs in data])
 
 # Test fungsi
-print(cariKota("Klaten", Daftar))  # Output: [6, 8]
-print(cariKota("Jakarta", Daftar))  # Output: []
-print(cariKota("Surakarta", Daftar))  # Output: [0, 2, 3]
+print(cariKota("Klaten", Daftar))  
+print(cariKota("Jakarta", Daftar))  
+print(cariKota("Surakarta", Daftar))  
