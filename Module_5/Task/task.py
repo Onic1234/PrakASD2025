@@ -1,5 +1,4 @@
 # 1. Buatlah suatu program untuk mengurutkan array mahasiswa berdasarkan NIM, yang elemennya terbuat dari class MhsTIF, yang telah kamu buat sebelumnya.
-
 class MhsTIF:
     def __init__(self, nim, nama, prodi):
         self.nim = nim
@@ -15,7 +14,6 @@ class MhsTIF:
 def urutkan_mahasiswa(mahasiswa_list):
     return sorted(mahasiswa_list, key=lambda m: m.nim)
 
-
 mahasiswa_list = [
     MhsTIF("L200234230", "Andi", "TI"),
     MhsTIF("L200234291", "Budi", "TI"),
@@ -27,11 +25,9 @@ print("Sebelum diurutkan:", mahasiswa_list)
 mahasiswa_list = urutkan_mahasiswa(mahasiswa_list)
 print("Setelah diurutkan:", mahasiswa_list)
 
-from time import time as detak
-from random import shuffle as kocok
+
 
 # Misal terdapat dua buah array yang sudah urut A dan B. Buatlah suatu program untukmenggabungkan, secara efisien, kedua array itu menjadi suatu array C yang urut.
-
 def gabungkan_array_urut(A, B):
     C = []
     i = j = 0
@@ -80,7 +76,9 @@ def insertionSort(arr):
             j -= 1
         arr[j + 1] = key
 
-    
+
+from time import time as detak
+from random import shuffle as kocok
 # Membandingkan waktu eksekusi
 k = list(range(1, 6001))
 kocok(k)
