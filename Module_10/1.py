@@ -1,24 +1,16 @@
-# Definisi ulang kelas TreeNode dan fungsi ukuranPohon setelah reset
+
 
 class TreeNode:
     def __init__(self, kiri=None, kanan=None):
         self.kiri = kiri
         self.kanan = kanan
 
+# ukuran
 def ukuranPohon(akar):
     if akar is None:
         return 0
     return 1 + ukuranPohon(akar.kiri) + ukuranPohon(akar.kanan)
 
-
-# Buat pohon biner contoh:
-#       A
-#      / \
-#     B   C
-#    /     \
-#   D       E
-
-# Struktur pohon
 akar = TreeNode(
     kiri=TreeNode(
         kiri=TreeNode(),  # D

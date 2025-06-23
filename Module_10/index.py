@@ -43,7 +43,6 @@ def cetakDataDanLevel(root, level=0):
         cetakDataDanLevel(root.kiri, level + 1)
         cetakDataDanLevel(root.kanan, level + 1)
 
-
 # Contoh penggunaan
 if __name__ == "__main__":
     # Membuat simpul pohon biner
